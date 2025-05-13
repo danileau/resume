@@ -11,6 +11,10 @@
         "theme",
         "template"
     ],
+    "scripts": {
+    "start": "npm run open",
+    "open": "concurrently \"http-server -a localhost -p 1234\" \"open http://localhost:1234\""
+    },
     "homepage": "https://startbootstrap.com/template-overviews/resume",
     "bugs": {
         "url": "https://github.com/BlackrockDigital/startbootstrap-resume/issues",
@@ -33,6 +37,7 @@
     },
     "devDependencies": {
         "browser-sync": "^2.27.11",
+        "concurrently": "^9.1.2",
         "gulp": "4.0.0",
         "gulp-autoprefixer": "6.0.0",
         "gulp-clean-css": "4.0.0",
@@ -40,6 +45,7 @@
         "gulp-plumber": "^1.2.1",
         "gulp-rename": "1.4.0",
         "gulp-sass": "5.1.0",
-        "gulp-uglify": "3.0.1"
+        "gulp-uglify": "3.0.1",
+        "http-server": "^14.1.1"
     }
 }
